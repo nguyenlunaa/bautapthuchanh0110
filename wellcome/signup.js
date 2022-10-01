@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View , StyleSheet, TextInput, TouchableOpacity, Image} from 'react-native'
 
-export default class Signup extends Component {
-  render() {
-    const {navigation} = this.props
+const Signup=({navigation})=>{
     return (
       <View style={ styles.container}>
         <View style={{flexDirection: 'row'}}>
@@ -43,7 +41,6 @@ export default class Signup extends Component {
       </View>
     )
   }
-}
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -70,4 +67,4 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     }
   });
-
+  export default Signup;
